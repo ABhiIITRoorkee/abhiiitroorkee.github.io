@@ -1,0 +1,158 @@
+:root {
+    --text: #111;
+    --muted: #555;
+    --line: #e6e6e6;
+    --link: #0b57d0;
+    --bg: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body {
+    font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.container {
+    max-width: 920px;
+    margin: 28px auto;
+    padding: 0 18px 40px;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 22px 0;
+}
+
+.header {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid var(--line);
+}
+
+.header-text h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+}
+
+.subtitle {
+    margin: 0 0 8px;
+    color: var(--muted);
+}
+
+.contact {
+    margin: 0 0 10px;
+    color: var(--muted);
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-top: 6px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin: 18px 0 10px;
+}
+
+ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    gap: 10px;
+    align-items: start;
+    margin: 10px 0;
+}
+
+.news-dot {
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    border-radius: 999px;
+    background: #222;
+}
+
+.pubs {
+    margin: 10px 0 0;
+    padding-left: 18px;
+}
+
+.pub-title {
+    font-weight: 600;
+}
+
+.pub-authors,
+.pub-venue {
+    color: var(--muted);
+}
+
+.pub-links {
+    color: var(--muted);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.footer {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.simple-header h1 {
+    margin: 0 0 6px;
+}
+
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+}
