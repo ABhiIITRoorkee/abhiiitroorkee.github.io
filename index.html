@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Abhinav Jamwal</title>
+    <meta name="description" content="Academic homepage of Abhinav Jamwal." />
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait of Abhinav Jamwal" />
+
+            <div class="header-text">
+                <h1>Abhinav Jamwal</h1>
+                <p class="subtitle">
+                    PhD (IV Year) · Department of Computer Science and Engineering · IIT Roorkee, India
+                </p>
+
+                <p class="contact">
+                    Email: <a href="mailto:abhinav_j@cs.iitr.ac.in">abhinav_j@cs.iitr.ac.in</a>
+                </p>
+
+                <nav class="links">
+                    <a href="pubs.html">Publications</a>
+                    <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+                    <a href="https://dblp.org/" target="_blank" rel="noopener">DBLP</a>
+                    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <hr />
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a PhD researcher in Computer Science and Engineering at IIT Roorkee. My interests include
+                recommendation systems, machine learning, software engineering, and medical imaging.
+            </p>
+            <p>
+                Previously, I worked as a Junior Research Fellow at Jawaharlal Nehru University on a DBT-funded project
+                on computer-aided diagnosis for intracranial atherosclerotic diseases using CT angiography.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Third-party library recommendation and software ecosystem mining</li>
+                <li>Graph and hypergraph learning for recommendation</li>
+                <li>Robust similarity measures and evaluation protocols</li>
+                <li>Applied ML for medical imaging</li>
+            </ul>
+        </section>
+
+        <hr />
+
+        <section id="news">
+            <h2>News</h2>
+
+            <div class="news-item">
+                <div class="news-dot" aria-hidden="true"></div>
+                <div><b>2026:</b> AMF-GR accepted at IEEE SANER 2026.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-dot" aria-hidden="true"></div>
+                <div><b>2025:</b> Journal paper published in ACM TOSEM.</div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="selected-publications">
+            <h2>Selected Publications</h2>
+            <ol class="pubs">
+                <li>
+                    <span class="pub-title">A Multi-Scale Hypergraph-Based Approach for Third-Party Library
+                        Recommendation in Mobile App Development</span><br />
+                    <span class="pub-authors">Abhinav Jamwal, Sandeep Kumar</span><br />
+                    <span class="pub-venue"><i>ACM TOSEM</i>, 2025</span>
+                    <span class="pub-links"> · DOI: <a href="https://doi.org/10.1145/3764114" target="_blank"
+                            rel="noopener">10.1145/3764114</a></span>
+                </li>
+
+                <li>
+                    <span class="pub-title">Towards an Approach for Project-Library Recommendation Based on Graph
+                        Normalization</span><br />
+                    <span class="pub-authors">Abhinav Jamwal, Sandeep Kumar</span><br />
+                    <span class="pub-venue"><i>ENASE</i>, 2025</span>
+                    <span class="pub-links"> · DOI: <a href="https://doi.org/10.5220/0013351900003928" target="_blank"
+                            rel="noopener">10.5220/0013351900003928</a></span>
+                </li>
+            </ol>
+
+            <p class="muted">
+                <a href="pubs.html">View full publications →</a>
+            </p>
+        </section>
+
+        <hr />
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Email: <a href="mailto:abhinav_j@cs.iitr.ac.in">abhinav_j@cs.iitr.ac.in</a><br />
+                Affiliation: IIT Roorkee, India
+            </p>
+        </section>
+
+        <footer class="footer">
+            <span>© <span id="y"></span> Abhinav Jamwal.</span>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
